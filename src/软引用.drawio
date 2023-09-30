@@ -1,9 +1,57 @@
-<mxfile host="app.diagrams.net" modified="2023-09-30T01:19:46.957Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" version="22.0.0" etag="QqdtDD4sBDj29cAr62gM" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-30T01:20:23.048Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="FmGNsk65j4TeYvsKCxWd" version="22.0.0" type="github">
   <diagram name="第 1 页" id="CeWqWtpEDRittOgwGV-q">
-    <mxGraphModel>
+    <mxGraphModel dx="1439" dy="759" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="HT1z858BzpoxHGxtMuDt-1" value="" style="shape=mxgraph.flowchart.process;" vertex="1" parent="1">
+          <mxGeometry x="355" y="449" width="115" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="HT1z858BzpoxHGxtMuDt-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.04;entryY=0.513;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="HT1z858BzpoxHGxtMuDt-3" target="HT1z858BzpoxHGxtMuDt-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HT1z858BzpoxHGxtMuDt-3" value="softReference" style="shape=mxgraph.flowchart.process;" vertex="1" parent="1">
+          <mxGeometry x="150" y="470" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="HT1z858BzpoxHGxtMuDt-4" value="SoftReference&lt;byte[]&gt; softReference = new SoftReference&lt;&gt;(new byte[1024 * 1024 * 10]);" style="text;html=1;" vertex="1" parent="1">
+          <mxGeometry x="193" y="330" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HT1z858BzpoxHGxtMuDt-5" value="软引用" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="383" y="290" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="HT1z858BzpoxHGxtMuDt-6" value="强引用" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="520" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="HT1z858BzpoxHGxtMuDt-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HT1z858BzpoxHGxtMuDt-8" target="HT1z858BzpoxHGxtMuDt-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HT1z858BzpoxHGxtMuDt-8" value="SRInstance" style="shape=mxgraph.flowchart.decision;" vertex="1" parent="1">
+          <mxGeometry x="360" y="465" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HT1z858BzpoxHGxtMuDt-9" value="软引用" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="383" y="520" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="HT1z858BzpoxHGxtMuDt-10" value="软引用实际&lt;br&gt;指向的值" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="620" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HT1z858BzpoxHGxtMuDt-11" value="actualInstance" style="shape=mxgraph.flowchart.start_1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="556" width="90" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="HT1z858BzpoxHGxtMuDt-12" value="堆" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="398" y="418" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="HT1z858BzpoxHGxtMuDt-13" value="&lt;span style=&quot;text-align: left&quot;&gt;new byte[1024 * 1024 * 10]&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="574" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="HT1z858BzpoxHGxtMuDt-14" value="SoftReference引用&lt;br&gt;&lt;span style=&quot;text-align: left&quot;&gt;new SoftReference&amp;lt;&amp;gt;(new byte[1024 * 1024 * 10])&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="408" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HT1z858BzpoxHGxtMuDt-15" value="特点 :&lt;br&gt;1. 正常不会被gc所回收, 只用当内存不够用的时候, 会将实际软引用指向的对象, 进行回收&lt;br&gt;2. 重要前提 : 此被软引用指向的对象, 不能被任何强引用所引用, 才能进行自动回收" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="172.5" y="760" width="480" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="HT1z858BzpoxHGxtMuDt-16" value="用途:&amp;nbsp;&lt;br&gt;当做缓存使用, 但是注意, 不要用任何强引用去指向他" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="880" width="290" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
