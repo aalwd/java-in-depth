@@ -4,6 +4,11 @@ import java.util.concurrent.CountDownLatch;
 
 public class CacheLinePadding2 {
     public static long COUNT= 1_0000_0000L;
+
+    /**
+     * 通过前后7个long值进行缓存行占位, 让数据可以
+     * 百分之百,不会和下一个x与当前x的值存放在同一个缓存行当中
+     */
     private static class T {
         public long p1,p2,p3,p4,p5,p6,p7;
         public volatile long x = 0L;

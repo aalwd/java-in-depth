@@ -38,6 +38,7 @@ public class CacheLinePadding1 {
         t1.start();
         t2.start();
         latch.await();
+        // 1s = 1000ms , 1ms = 1000us , 1us = 1000ns
         System.out.println((System.nanoTime() - start) / 100_0000);
 
 
